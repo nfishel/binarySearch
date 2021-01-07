@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@300;400;900&display=swap');
+/*
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+*{box-sizing: border-box;margin:0;padding: 0;}
+html{height:100%;}
+body{
+  height:100%;
+  margin:0;
+  background-color: #bada55;
+  background-image: linear-gradient(to right top, #bada55, #8ccf65, #62c174, #3ab181, #10a088, #009389, #008687, #0d7882, #1b6c7a, #255f71, #2c5365, #2f4858);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  color:#e7e7e7;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    display: grid;
+    width:100%;
+    max-width: 1200px;
+    margin:0 auto;
+    grid-template-columns: repeat( auto-fit, minmax(70px, 1fr) );
+    padding:8px;
+    grid-gap:4px;
+}
+
+.defaultCard{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    color:#1e1e1e;
+    padding:5px;
+    text-align:center;
+    font-size:1.5rem;
+    /*width:65px;*/
+
+}
+input{font-size:1.8rem;}
+.guessedCard{
+    color:#ccc;
+}
+#userInput{
+    text-align:center;
+    margin:20px;
+}
+h1{
+    text-align:center;
+    margin-top:30px;
+}
