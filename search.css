@@ -34,15 +34,16 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #1e1e1e;
-    color:#1e1e1e;
+    color:#ff7870;
     padding:5px;
     text-align:center;
-    font-size:2rem;
+    font-size:1rem;
 
 }
 input{font-size:1.8rem;}
 .guessedCard{
     color:#ccc;
+    font-size:2rem;
 }
 #userInput{
     text-align:center;
