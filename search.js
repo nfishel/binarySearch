@@ -32,8 +32,9 @@ function tellMe(card){
     message.style.display = "flex";
     
     const selectedValue = parseInt(card.dataset.val);
-    console.log(numberSet.indexOf(selectedValue));
+    //console.log(numberSet.indexOf(selectedValue));
     card.classList.toggle('guessedCard');
+    card.innerHTML = card.dataset.val;
     if(magicNumber === selectedValue){
         message.innerHTML = 'You are correct!';
     }else if(magicNumber >= selectedValue){
@@ -46,7 +47,7 @@ function tellMe(card){
 
 function generateNumberSet(howmany){
 message.style.display = "none";
-    console.time();
+    //console.time();
     numberSet = [];
     while(numberSet.length < howmany){
         const randomValue = Math.floor(Math.random()*100*howmany)+1;
@@ -55,8 +56,8 @@ message.style.display = "none";
         }
     }
     numberSet.sort((a, b) => a - b);
-    console.log(numberSet);
-    console.timeEnd();
+    // console.log(numberSet);
+    // console.timeEnd();
 }
 
 function pickRandomValue(){
@@ -79,7 +80,8 @@ function displayOutput(){
         const div = document.createElement('div');
         div.classList.add('defaultCard');
         div.setAttribute("data-val", numberSet[i]);
-        div.innerHTML = numberSet[i];
+        //div.innerHTML = numberSet[i];
+        div.innerHTML = "?";
         container.insertAdjacentElement("beforeend", div);
         
     }
