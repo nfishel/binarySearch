@@ -62,5 +62,7 @@ h1{
   background-color:#fcfcfc;
   color: #1e1e1e;
   width:40vw;
-  padding:1.25rem;
+  padding:1.25rem 3rem;
+  margin:2rem auto;
+  border-radius:.75rem;
 }
