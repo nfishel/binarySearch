@@ -81,7 +81,7 @@ function displayOutput(){
         div.classList.add('defaultCard');
         div.setAttribute("data-val", numberSet[i]);
         //div.innerHTML = numberSet[i];
-        div.innerHTML = "?";
+        div.innerHTML = "#"+(i+1);
         container.insertAdjacentElement("beforeend", div);
         
     }
