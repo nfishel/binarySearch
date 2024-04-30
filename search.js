@@ -6,6 +6,7 @@ let magicNumber = 0;
 const numCards = document.querySelector('#numCards');
 const goBtn = document.querySelector('#goBtn');
 const message = document.querySelector('#message');
+message.style.display = "none";
 const h1 = document.querySelector('h1');
 goBtn.addEventListener('click', function(){
     generateNumberSet(parseInt(numCards.value));
@@ -62,6 +63,7 @@ function pickRandomValue(){
 }
 
 function displayOutput(){
+    message.style.display = "flex";
     const userInput = document.querySelector('#userInput');
     
     if(document.querySelector('.container')){
