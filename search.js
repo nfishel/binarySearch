@@ -29,6 +29,7 @@ function setUpClicks(){
 }
 
 function tellMe(card){
+    message.style.display = "flex";
     
     const selectedValue = parseInt(card.dataset.val);
     console.log(numberSet.indexOf(selectedValue));
@@ -44,6 +45,7 @@ function tellMe(card){
 }
 
 function generateNumberSet(howmany){
+message.style.display = "none";
     console.time();
     numberSet = [];
     while(numberSet.length < howmany){
@@ -63,7 +65,6 @@ function pickRandomValue(){
 }
 
 function displayOutput(){
-    message.style.display = "flex";
     const userInput = document.querySelector('#userInput');
     
     if(document.querySelector('.container')){
