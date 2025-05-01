@@ -51,7 +51,8 @@ message.style.display = "none";
     //console.time();
     numberSet = [];
     while(numberSet.length < howmany){
-        const randomValue = Math.floor(Math.random()*100*howmany)+1;
+        // const randomValue = Math.floor(Math.random()*100*howmany)+1;
+        const randomValue = Math.floor(Math.random()*90000)+1;
         if(!numberSet.includes(randomValue)){
             numberSet.push(randomValue);
         }
