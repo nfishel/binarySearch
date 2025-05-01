@@ -1,5 +1,7 @@
 console.log('It worked!!!');
 
+const powersOfTwo = [1,2,4,8,16,32,64,128,256,512,1024,2048,4096];
+
 let numberSet = [];
 let magicNumber = 0;
 
@@ -79,6 +81,7 @@ function displayOutput(){
     for(let i=0; i<numberSet.length; i++){
         const div = document.createElement('div');
         div.classList.add('defaultCard');
+        powersOfTwo.includes(i) ? div.classList.add('selction-card') : undefined;
         div.setAttribute("data-val", numberSet[i]);
         //div.innerHTML = numberSet[i];
         div.innerHTML = "#"+(i+1);
